@@ -5,32 +5,23 @@ int main(int argc, char **argv)
 {
 	std::cout << "=== SED IS FOR LOSERS ===" << std::endl;
 	
-	// Controlla numero di parametri
 	if (argc != 4)
 	{
 		std::cout << "Error: Wrong number of arguments" << std::endl;
 		std::cout << "Expected: 3 arguments, got: " << (argc - 1) << std::endl;
-		
 		StringReplacer helper("", "", "");
 		helper.printUsage();
 		return 1;
 	}
-	
-	// Estrai parametri
 	std::string filename = argv[1];
 	std::string searchString = argv[2];
 	std::string replaceString = argv[3];
-	
 	std::cout << "\nProcessing file: " << filename << std::endl;
 	std::cout << "Search for: '" << searchString << "'" << std::endl;
 	std::cout << "Replace with: '" << replaceString << "'" << std::endl;
 	std::cout << "----------------------------------------" << std::endl;
-	
-	// Crea replacer e processa file
 	StringReplacer replacer(filename, searchString, replaceString);
-	
 	bool success = replacer.processFile();
-	
 	if (success)
 	{
 		std::cout << "----------------------------------------" << std::endl;

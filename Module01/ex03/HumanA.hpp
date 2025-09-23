@@ -10,13 +10,11 @@ class HumanA
 {
 private:
 	std::string name;
-	Weapon& weapon;  // REFERENCE - l'arma DEVE sempre esistere
+	Weapon& weapon;
 
 public:
-	// Costruttore: prende nome E arma (arma obbligatoria)
+
 	HumanA(std::string humanName, Weapon& humanWeapon);
-	
-	// Funzione di attacco
 	void attack() const;
 };
 

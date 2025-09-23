@@ -11,17 +11,11 @@ private:
 	std::string name;
 
 public:
-	// Costruttore
 	Zombie(std::string zombieName);
-	
-	// Distruttore
 	~Zombie();
-	
-	// Metodo per annunciarsi
 	void announce() const;
 };
 
-// Funzioni globali richieste dall'esercizio
 Zombie* newZombie(std::string name);
 void randomChump(std::string name);
 
