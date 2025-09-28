@@ -13,14 +13,10 @@ class ClapTrap {
 	unsigned int attackDamage;
 
 	public:
-		// Constructor
 		ClapTrap(const std::string& name);
-		// Destructor
-		~ClapTrap();
-		// Copy Constructor
 		ClapTrap(const ClapTrap& other);
-		// Assignment Operator Overload
 		ClapTrap& operator=(const ClapTrap& other);
+		~ClapTrap();
 	
 		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
