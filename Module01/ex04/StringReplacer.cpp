@@ -82,5 +82,4 @@ bool StringReplacer::processFile() const
 void StringReplacer::printUsage() const
 {
 	std::cout << "Usage: ./sed_replacer <filename> <search_string> <replace_string>" << std::endl;
-	std::cout << "Example: ./sed_replacer input.txt \"hello\" \"hi\"" << std::endl;
 }

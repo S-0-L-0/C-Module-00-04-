@@ -13,10 +13,10 @@ private:
 	std::string s1;
 	std::string s2;
 	
+
 	bool isValidInput() const;
 	std::string getOutputFilename() const;
 	std::string replaceAllOccurrences(const std::string& content) const;
-
 public:
 	StringReplacer(const std::string& fileName, const std::string& search, const std::string& replace);
 	bool processFile() const;

@@ -16,9 +16,9 @@ int main(int argc, char **argv)
 	std::string filename = argv[1];
 	std::string searchString = argv[2];
 	std::string replaceString = argv[3];
-	std::cout << "\nProcessing file: " << filename << std::endl;
-	std::cout << "Search for: '" << searchString << "'" << std::endl;
-	std::cout << "Replace with: '" << replaceString << "'" << std::endl;
+	std::cout << "\nFile: " << filename << std::endl;
+	std::cout << "Source: '" << searchString << "'" << std::endl;
+	std::cout << "Destination: '" << replaceString << "'" << std::endl;
 	std::cout << "----------------------------------------" << std::endl;
 	StringReplacer replacer(filename, searchString, replaceString);
 	bool success = replacer.processFile();

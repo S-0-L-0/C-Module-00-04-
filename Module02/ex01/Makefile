@@ -1,8 +1,8 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-NAME = harl
+NAME = a.out
 
-SRCS = main.cpp Harl.cpp
+SRCS = main.cpp Fixed.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -21,12 +21,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-test: $(NAME)
-	@echo "=== Quick test ==="
-	@echo "Testing DEBUG:"
-	@./$(NAME) | grep -A1 "Testing DEBUG"
-	@echo "\nTesting ERROR:"
-	@./$(NAME) | grep -A1 "Testing ERROR"
 
 .PHONY: all clean fclean re test
